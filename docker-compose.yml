@@ -1,0 +1,9 @@
+version: '3'
+services:
+  nodeapp:
+    build: .
+    container_name: cdp-td5
+    ports:
+      - 3002:3000
+    restart: unless-stopped
+
